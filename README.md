@@ -93,7 +93,7 @@ If the DownloadItem has been created as a stream from the `downloads.download()`
 
 **write()**: the method for the add-on to write bytes to the target file.
 
-Modeled after the [OS.File.write](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/OSFile.jsm/OS.File_for_the_main_thread#write) specifications.
+Modeled after the [OS.File.write](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/OSFile.jsm/OS.File_for_the_main_thread#write%28%29) specifications.
 
 ```
 Promise<number> write(
@@ -104,7 +104,7 @@ Promise<number> write(
 
 **setPosition()**: move the file pointer to a specified index.
 
-Modeled after the [OS.File.setPosition](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/OSFile.jsm/OS.File_for_the_main_thread#setPosition) specifications.
+Modeled after the [OS.File.setPosition](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/OSFile.jsm/OS.File_for_the_main_thread#setPosition%28%29) specifications.
 
 ```
 Promise<void> setPosition(
@@ -117,7 +117,7 @@ In the original *OS.File* specifications, `origin` takes values `POS_START`, `PO
 
 **close()**: ends the stream download successfully.
 
-Modeled after the [OS.File.close](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/OSFile.jsm/OS.File_for_the_main_thread#close) specifications.
+Modeled after the [OS.File.close](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/OSFile.jsm/OS.File_for_the_main_thread#close%28%29) specifications.
 
 ```
 Promise<void> close()
@@ -139,7 +139,7 @@ Should `reason` be any string, or maybe value `ADDON_TERMINATED` with an additio
 
 While not needed by Video DownloadHelper, this function could be useful to some other add-ons (?)
 
-Modeled after the [OS.File.read](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/OSFile.jsm/OS.File_for_the_main_thread#read) specifications.
+Modeled after the [OS.File.read](https://developer.mozilla.org/en-US/docs/Mozilla/JavaScript_code_modules/OSFile.jsm/OS.File_for_the_main_thread#read%28%29) specifications.
 
 ```
 Promise<Uint8Array> read(
